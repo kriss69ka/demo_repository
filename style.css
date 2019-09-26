@@ -1,0 +1,19 @@
+body{
+  background-color: antiquewhite;
+  color: blueviolet;
+  text-align: center;
+  font-size: 16px;
+}
+p {
+  color:red;
+}
+form{
+  background-color: bisque;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+input {
+  width: 100%;
+}

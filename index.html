@@ -3,20 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--  <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/normalize.css">
   <title>Document</title>
 </head>
 
-
 <body>
-  <h1>zxc</h1>
+
   <form action="">
-    <a href="https://www.google.ru/">Google</a>
-    <p>Введите имя:</p>
-    <input type="text" required>
-    <p>Введите фамилию:</p>
-    <input type="text" required>
-    <button type="submit">Отправить</button>
+    <h2>Контактная информация</h3>
+      <label for="name" class="form_label">Введите имя:</label>
+
+      <input type="text" id="name" class="form_input" required>
+
+      <label for="lastname" class="form_label">Введите фамилию:</label>
+
+      <input type="text" id="lastname" class="form_input" required>
+
+      <button type="submit" class="send_button">Отправить</button>
+      <div class="consent">
+        <input type="checkbox" name="check" value="1" id="consent_check" required>
+        <label for="consent_check" class="consent_text">Нажимая на кнопку, вы соглашаетесь с правилами обработки персональных данных</label>
+      </div>
   </form>
 
 </body>

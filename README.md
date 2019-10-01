@@ -1,2 +1,2 @@
 # demo_repository
-hello world
+Работает во всех актуальных браузерах

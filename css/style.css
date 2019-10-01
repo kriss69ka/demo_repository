@@ -1,0 +1,329 @@
+
+/* для верстки использую flexbox-ы */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.avatar img{
+  
+  width: 100%;
+  border: 1px solid #e1e4e8;
+}
+.fullname{
+  padding: 16px 0px 16px;
+}
+.name{
+ 
+  font-size: 26px;
+    line-height: 30px;
+}
+.nickname{
+  font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+   
+}
+.button-profile{
+  background-color:rgb(239, 243, 246);
+  background-image:linear-gradient(-180deg, rgb(250, 251, 252), rgb(239, 243, 246) 90%);
+ width: 100%;
+ padding: 6px 12px;
+ margin: 8px 0px 16px;
+ font-size: 14px;
+ cursor: pointer;
+}
+.location{
+  font-size: 14px;
+  display: flex;
+}
+.location-img{
+  margin-right: 8px;
+  
+}
+.main{
+  width: 75%;
+}
+.navigation{
+  border-bottom: 1px solid #d1d5da;
+  display: flex;
+}
+.item{
+  padding: 16px 8px;
+  margin-right: 16px;
+  text-decoration: none;
+  color:#586069;
+  line-height: 1.5;
+  border-bottom: 2px solid transparent;
+}
+/* Использую пседоселектор hover */
+.item:hover{
+  border-bottom-color:rgba(27,31,35,0.3);
+}
+.item-active{
+  padding: 16px 8px;
+  margin-right: 16px;
+  text-decoration: none;
+  line-height: 1.5;
+  color:rgb(36, 41, 46);
+  border-bottom: 2px solid transparent;
+  border-bottom-color: #e36209;
+}
+
+.pinned{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.pinned-repositories{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.pinned-text{
+  font-size: 16px;
+}
+.customize{
+  text-decoration: none;
+  font-size: 13px;
+  color: #586069;
+}
+.box-repository{
+  display:flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+width: 50%;
+margin-bottom: 30px;
+}
+.demo-repository{
+  color: #0366d6;
+  margin-left: 8px;
+  text-decoration: none;
+}
+.item-repository{
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.lang-color{
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e34c26;
+}
+.lang-text{
+  font-size: 12px;
+  color: #586069;
+}
+.contribution{
+  display: flex;
+  justify-content: space-between;
+}
+.contribution-activity{
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 1;
+}
+.contribution-text{
+  margin-bottom: 8px;
+  font-size: 16px;
+  
+}
+.year{
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  
+}
+.active-year{
+  text-decoration: none;
+  box-sizing: content-box;
+  width: 91px;
+  color: #fff;
+  background-color: #0366d6;
+  font-size: 12px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  line-height: 1.5;
+}
+.inactive-year{
+  text-decoration: none;
+  line-height: 1.5;
+  box-sizing: content-box;
+  width: 91px;
+  font-size: 12px;
+  color: #586069;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+}
+/* Использую пседоселектор hover */
+.inactive-year:hover{
+  background-color: rgba(27,31,35,0.1);
+}
+.timeline-month{
+  
+  font-size: 12px;
+  padding: 4px 8px 4px 0;
+  
+}
+.month{
+  background-color: #fff;
+  padding-right: 8px;
+}
+.timeline-list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color:  #586069;
+}
+/* Использую псевдоэлементы before/after */
+.timeline-list::before{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+   
+    z-index: -1;
+    display: block;
+    width: 2px;
+    content: "";
+    
+    left: 15px;
+    background-color: #eaecef;
+}
+.timeline-month::after{
+  position: absolute;
+  top: 12px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 1px;
+  content: "";
+  background-color: #eaecef;
+}
+.timeline-item{
+  padding: 24px 0px 24px 24px;
+  border-bottom: 1px solid #eaecef;
+  margin-left: 18px;
+}
+.item-icon{
+  background-color: #e1e4e8;
+  border-radius: 50%;
+  text-align: center;
+  float: left;
+    width: 32px;
+    height: 32px;
+    margin-top: -5px;
+    margin-left: -39px;
+    line-height: 28px;
+    color: #24292e;
+    border: 2px solid #fff;
+    padding-top: 3px;
+}
+.box-form{
+  width: 30%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  color: #586069;
+  padding: 8px 16px;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.form-input{
+  border: 1px solid #d1d5da;
+}
+.form-label{
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.send-button{
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #586069;
+  cursor: pointer;
+  background-color:rgb(239, 243, 246);
+  background-image:linear-gradient(-180deg, rgb(250, 251, 252), rgb(239, 243, 246) 90%);
+}
+  
+.container{
+        max-width: 1280px;
+        width: 100%;
+        margin:24px 80px 0px;
+        padding: 0px 16px; 
+        display: flex;
+      }
+.about-me{
+        width:25%;
+        padding-right: 40px;
+      }
+
+@media (max-width:640px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 641px;
+    margin:24px 0 0;
+    padding: 0px 16px;
+    width: 100%;
+}
+    
+  .about-me{
+    display: block;
+    width: 100%;
+  }
+  .avatar{
+    display: inline-block;
+    width: 25%;
+  }
+  .fullname{
+    display: inline-block;
+    margin-left: 16px;
+  }
+  .button-profile{
+    display: none;
+  }
+  .main{
+    width: 100%;
+  }
+ .box-repository {
+   width: 100%;
+ }
+ .year{
+   display: none;
+ }
+ .box-form{
+   width: 50%;
+ }
+ .about-me_m{
+   display: flex;
+   margin-bottom: 8px;
+ }
+ .navigation{
+   font-size: 14px;
+   overflow-y: scroll;
+ }
+ .item{
+   margin: 0 0 2px;
+ }
+ .item-active{
+  margin: 0 0 2px;
+ }
+}

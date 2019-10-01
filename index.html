@@ -1,20 +1,118 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="stylesheet" href="css/mobileCss.css"> -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>kriss69ka(Kristina Kim)</title>
 </head>
 
 <body>
-  <form action="">
-    <p>Введите имя:</p>
-    <input type="text" required>
-    <p>Введите фамилию:</p>
-    <input type="text" required>
-    <button type="submit">Отправить</button>
-  </form>
+  <div class="container">
+    <div class="about-me">
+      <div class="about-me_m">
+        <div class="avatar">
+          <img src="https://avatars2.githubusercontent.com/u/22142384?s=460&v=4" alt="">
+        </div>
+        <div class="fullname">
+          <div class="name">Kristina Kim</div>
+          <div class="nickname">kriss 69ka</div>
+        </div>
+      </div>
+      <!-- <input type="button" value="Edit Profile" class="button-profile"> -->
+      <button class="button-profile">Edit Profile</button>
+      <div class="location">
+        <img src="svg/location.svg" class="location-img">
+        <span>Russia</span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="navigation">
+        <a href="#" class="item-active">Overview</a>
+        <a href="#" class="item">Repositories</a>
+        <a href="#" class="item">Projects</a>
+        <a href="#" class="item">Packages</a>
+        <a href="#" class="item">Stars</a>
+        <a href="#" class="item">Followers</a>
+        <a href="#" class="item">Following</a>
+      </div>
+      <div class="pinned">
+        <div class="pinned-repositories">
+          <span class="pinned-text">Pinned</span>
+          <a href="#" class="customize">Customize your pins</a>
+        </div>
+        <div class="box-repository">
+          <div class="item-repository">
+            <img src="svg/repo.svg" class="demo-repository_img">
+            <a href="#" class="demo-repository">demo-repository</a>
+          </div>
+          <span>
+            <span class="lang-color"></span>
+            <span class="lang-text">HTML</span>
+          </span>
+        </div>
+      </div>
+      <div class="contribution">
+        <div class="contribution-activity">
+          <span class="contribution-text">Contribution activity</span>
+          <div class="timeline-list">
+            <span class="timeline-month">
+              <span class="month">September 2019</span>
+            </span>
+            <div class="timeline-item">
+              <span class="item-icon">
+                <img src="svg/repo-push.svg" alt="">
+              </span>
+              <span>Created 6 commits in 1 repository</span>
+            </div>
+            <div class="timeline-item">
+              <span class="item-icon">
+                <img src="svg/repo.svg" alt="">
+              </span>
+              <span>Created 1 repository</span>
+            </div>
+            <div class="timeline-item">
+              <span class="item-icon">
+                <img src="svg/rocket.svg" alt="">
+              </span>
+              <span>Opened their first pull request on GitHub in kriss69ka/demo_repository</span>
+            </div>
+            <div class="timeline-item">
+              <span class="item-icon">
+                <img src="svg/pull.svg" alt="">
+              </span>
+              <span>Opened 1 other pull request in 1 repository</span>
+            </div>
+          </div>
+        </div>
 
+
+        <div class="year">
+          <a href="#" class="active-year">2019</a>
+          <a href="#" class="inactive-year">2018</a>
+          <a href="#" class="inactive-year">2017</a>
+          <a href="#" class="inactive-year">2016</a>
+
+        </div>
+      </div>
+      <div class="box-form">
+        <form action="" class="form">
+          <label for="firstname" class="form-label">Your firstname</label>
+          <input type="text" id="firstname" class="form-input" required>
+          <label for="lastname" class="form-label">Your lastname</label>
+          <input type="text" id="lastname" class="form-input" required>
+          <button class="send-button">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
